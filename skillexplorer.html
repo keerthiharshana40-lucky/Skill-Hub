@@ -1,0 +1,94 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillHub | Skill Explorer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Inter", "Segoe UI", Arial, sans-serif;
+        }
+
+        :root {
+            --blue: #1769e0;
+            --dark-blue: #0b3d91;
+            --light-blue: #eaf3ff;
+            --cyan: #06b6d4;
+            --purple: #7c3aed;
+            --green: #10b981;
+            --orange: #f59e0b;
+            --dark: #172033;
+            --gray: #64748b;
+            --light: #f5f9ff;
+            --white: #ffffff;
+            --border: #dce8f7;
+            --shadow: 0 10px 30px rgba(23, 105, 224, 0.10);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            border: none;
+            cursor: pointer;
+        }
+
+        /* ================= NAVBAR ================= */
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: linear-gradient(90deg, #0b3d91, #1769e0);
+            box-shadow: 0 4px 20px rgba(0, 45, 120, 0.2);
+        }
+
+        .navbar {
+            max-width: 1250px;
+            margin: auto;
+            height: 72px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            font-size: 25px;
+            font-weight: 800;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: white;
+            color: var(--blue);
+            display: grid;
+            place-items: center;
+            font-size: 21px;
+            font-weight: 900;
+        }
+```
