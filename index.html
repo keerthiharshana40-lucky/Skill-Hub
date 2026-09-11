@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-```
-<title>SkillHub | Learn. Grow. Succeed.</title>
+    <title>SkillHub | Learn. Grow. Succeed.</title>
 
 <style>
     * {
@@ -64,14 +62,13 @@
     }
 
     .navbar {
-        max-width: 1300px;
+        max-width: 1250px;
         margin: auto;
-        min-height: 72px;
+        height: 72px;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 10px 25px;
-        gap: 20px;
+        padding: 0 25px;
     }
 
     .logo {
@@ -81,7 +78,6 @@
         color: white;
         font-size: 25px;
         font-weight: 800;
-        white-space: nowrap;
     }
 
     .logo-icon {
@@ -99,47 +95,29 @@
     .nav-links {
         display: flex;
         align-items: center;
-        gap: 5px;
+        gap: 8px;
         list-style: none;
     }
 
     .nav-links a {
         color: #eaf3ff;
-        padding: 9px 11px;
+        padding: 10px 13px;
         border-radius: 8px;
-        font-size: 13px;
+        font-size: 14px;
         transition: 0.3s;
     }
 
     .nav-links a:hover,
     .nav-links a.active {
-        background: rgba(255,255,255,0.17);
+        background: rgba(255, 255, 255, 0.17);
         color: white;
     }
 
-    .nav-icon {
-        font-size: 17px;
-        margin-right: 4px;
-    }
-
-    .profile-btn {
-        display: flex !important;
-        align-items: center;
-        gap: 7px;
+    .nav-btn {
         background: white;
         color: var(--blue) !important;
         font-weight: 700;
-        padding: 8px 12px !important;
-    }
-
-    .profile-small {
-        width: 28px;
-        height: 28px;
-        border-radius: 50%;
-        background: var(--light-blue);
-        display: grid;
-        place-items: center;
-        font-size: 15px;
+        padding: 10px 18px !important;
     }
 
     .menu-btn {
@@ -149,193 +127,10 @@
         font-size: 28px;
     }
 
-    /* ================= HERO ================= */
-
-    .hero {
-        min-height: 590px;
-        display: flex;
-        align-items: center;
-
-        background:
-            radial-gradient(
-                circle at 90% 20%,
-                rgba(6,182,212,0.15),
-                transparent 25%
-            ),
-            radial-gradient(
-                circle at 10% 80%,
-                rgba(124,58,237,0.10),
-                transparent 25%
-            ),
-            linear-gradient(135deg,#f7fbff,#eaf3ff);
-
-        padding: 70px 7%;
-    }
-
-    .hero-content {
-        max-width: 1250px;
-        width: 100%;
-        margin: auto;
-
-        display: grid;
-        grid-template-columns: 1.1fr 0.9fr;
-        gap: 60px;
-        align-items: center;
-    }
-
-    .hero-label {
-        display: inline-block;
-        color: var(--blue);
-        background: white;
-        border: 1px solid var(--border);
-        padding: 7px 15px;
-        border-radius: 30px;
-        font-size: 13px;
-        font-weight: 700;
-        margin-bottom: 18px;
-    }
-
-    .hero h1 {
-        font-size: 55px;
-        line-height: 1.12;
-        margin-bottom: 20px;
-    }
-
-    .hero h1 span {
-        color: var(--blue);
-    }
-
-    .hero p {
-        color: var(--gray);
-        font-size: 17px;
-        max-width: 650px;
-        margin-bottom: 30px;
-    }
-
-    .hero-buttons {
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-    }
-
-    .primary-btn,
-    .secondary-btn {
-        padding: 13px 22px;
-        border-radius: 10px;
-        font-weight: 700;
-        transition: 0.3s;
-    }
-
-    .primary-btn {
-        background: var(--blue);
-        color: white;
-    }
-
-    .primary-btn:hover {
-        background: var(--dark-blue);
-        transform: translateY(-2px);
-    }
-
-    .secondary-btn {
-        background: white;
-        color: var(--blue);
-        border: 1px solid var(--border);
-    }
-
-    .secondary-btn:hover {
-        background: var(--light-blue);
-    }
-
-    /* ================= HERO DASHBOARD ================= */
-
-    .hero-dashboard {
-        background: white;
-        border-radius: 22px;
-        padding: 28px;
-        box-shadow: 0 20px 50px rgba(23,105,224,0.15);
-        border: 1px solid var(--border);
-    }
-
-    .mini-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 25px;
-    }
-
-    .mini-header h3 {
-        font-size: 19px;
-    }
-
-    .online {
-        color: var(--green);
-        font-size: 13px;
-        font-weight: 700;
-    }
-
-    .progress-circle {
-        width: 190px;
-        height: 190px;
-        border-radius: 50%;
-        margin: 10px auto 25px;
-
-        background:
-            conic-gradient(
-                var(--blue) 0deg 252deg,
-                #e5edf9 252deg 360deg
-            );
-
-        display: grid;
-        place-items: center;
-    }
-
-    .progress-inner {
-        width: 145px;
-        height: 145px;
-        background: white;
-        border-radius: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .progress-inner strong {
-        font-size: 35px;
-        color: var(--blue);
-    }
-
-    .progress-inner small {
-        color: var(--gray);
-    }
-
-    .mini-stats {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 12px;
-    }
-
-    .mini-stat {
-        background: var(--light-blue);
-        border-radius: 12px;
-        padding: 15px;
-        text-align: center;
-    }
-
-    .mini-stat strong {
-        display: block;
-        color: var(--blue);
-        font-size: 22px;
-    }
-
-    .mini-stat small {
-        color: var(--gray);
-    }
-
     /* ================= GENERAL ================= */
 
     section {
-        padding: 80px 7%;
+        padding: 90px 7%;
     }
 
     .container {
@@ -345,7 +140,7 @@
 
     .section-title {
         text-align: center;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .section-title span {
@@ -357,8 +152,9 @@
     }
 
     .section-title h2 {
-        font-size: 36px;
-        margin: 7px 0;
+        font-size: 38px;
+        margin: 8px 0;
+        color: var(--dark);
     }
 
     .section-title p {
@@ -367,381 +163,602 @@
         margin: auto;
     }
 
-    /* ================= SEARCH ================= */
+    /* ================= HERO ================= */
 
-    .search-section {
-        background: white;
-        padding-top: 65px;
-        padding-bottom: 65px;
+    .hero {
+        min-height: 650px;
+        display: flex;
+        align-items: center;
+        background:
+            radial-gradient(circle at 90% 20%, rgba(6, 182, 212, 0.15), transparent 25%),
+            radial-gradient(circle at 10% 80%, rgba(124, 58, 237, 0.1), transparent 25%),
+            linear-gradient(135deg, #f7fbff, #eaf3ff);
+        padding-top: 70px;
     }
 
-    .course-search {
-        max-width: 800px;
+    .hero-content {
+        max-width: 1250px;
         margin: auto;
-        display: flex;
-        background: white;
-        border: 2px solid var(--border);
-        border-radius: 14px;
-        overflow: hidden;
-        box-shadow: var(--shadow);
-    }
-
-    .course-search input {
-        flex: 1;
-        border: none;
-        outline: none;
-        padding: 17px 20px;
-        font-size: 15px;
-    }
-
-    .course-search button {
-        background: var(--blue);
-        color: white;
-        padding: 0 25px;
-        font-weight: 700;
-    }
-
-    .course-search button:hover {
-        background: var(--dark-blue);
-    }
-
-    /* ================= QUICK ACTIONS ================= */
-
-    .quick-grid {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        gap: 20px;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 70px;
+        align-items: center;
     }
 
-    .quick-card {
-        background: white;
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        padding: 25px;
-        text-align: center;
-        box-shadow: var(--shadow);
-        transition: 0.3s;
+    .hero-text h1 {
+        font-size: clamp(42px, 6vw, 68px);
+        line-height: 1.05;
+        margin: 15px 0 20px;
     }
 
-    .quick-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .quick-icon {
-        width: 55px;
-        height: 55px;
-        border-radius: 14px;
-        margin: auto auto 15px;
-        display: grid;
-        place-items: center;
-        font-size: 25px;
-    }
-
-    .blue-bg {
-        background: #eaf3ff;
+    .hero-text h1 span {
         color: var(--blue);
     }
 
-    .purple-bg {
-        background: #f0e9ff;
-        color: var(--purple);
-    }
-
-    .cyan-bg {
-        background: #e4fbff;
-        color: var(--cyan);
-    }
-
-    .green-bg {
-        background: #e7faf3;
-        color: var(--green);
-    }
-
-    .quick-card h3 {
-        margin-bottom: 5px;
-    }
-
-    .quick-card p {
+    .hero-text p {
+        font-size: 18px;
         color: var(--gray);
-        font-size: 13px;
+        max-width: 600px;
+        margin-bottom: 30px;
     }
 
-    /* ================= COURSES ================= */
-
-    .courses-section {
-        background: var(--light);
-    }
-
-    .course-grid {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 22px;
-    }
-
-    .course-card {
-        background: white;
-        border-radius: 16px;
-        overflow: hidden;
-        border: 1px solid var(--border);
-        box-shadow: var(--shadow);
-        transition: 0.3s;
-    }
-
-    .course-card:hover {
-        transform: translateY(-5px);
-    }
-
-    .course-top {
-        height: 120px;
-        padding: 25px;
-        display: flex;
+    .hero-label {
+        display: inline-flex;
         align-items: center;
+        gap: 8px;
+        padding: 8px 14px;
+        background: #dbeafe;
+        color: var(--blue);
+        border-radius: 30px;
+        font-size: 13px;
+        font-weight: 800;
+    }
+
+    .hero-buttons {
+        display: flex;
         gap: 15px;
+        flex-wrap: wrap;
     }
 
-    .course-top.blue {
-        background: linear-gradient(135deg,#dcecff,#f4f9ff);
-    }
-
-    .course-top.purple {
-        background: linear-gradient(135deg,#eee5ff,#faf8ff);
-    }
-
-    .course-top.green {
-        background: linear-gradient(135deg,#dff8ee,#f7fffb);
-    }
-
-    .course-icon {
-        width: 58px;
-        height: 58px;
-        border-radius: 15px;
-        background: white;
-        display: grid;
-        place-items: center;
-        font-size: 28px;
-    }
-
-    .course-body {
-        padding: 22px;
-    }
-
-    .course-body h3 {
-        margin-bottom: 8px;
-    }
-
-    .course-body p {
-        color: var(--gray);
-        font-size: 14px;
-        margin-bottom: 15px;
-    }
-
-    .course-info {
-        display: flex;
-        justify-content: space-between;
-        color: var(--gray);
-        font-size: 12px;
-        margin-bottom: 17px;
-    }
-
-    .course-btn {
-        display: block;
-        text-align: center;
-        padding: 10px;
-        border-radius: 8px;
-        background: var(--light-blue);
-        color: var(--blue);
+    .primary-btn,
+    .secondary-btn {
+        padding: 14px 23px;
+        border-radius: 10px;
         font-weight: 700;
-        font-size: 13px;
+        transition: 0.3s;
     }
 
-    .course-btn:hover {
+    .primary-btn {
         background: var(--blue);
         color: white;
+        box-shadow: 0 8px 20px rgba(23, 105, 224, 0.25);
     }
 
-    .no-results {
-        display: none;
-        text-align: center;
-        color: var(--gray);
-        padding: 30px;
+    .primary-btn:hover {
+        background: var(--dark-blue);
+        transform: translateY(-2px);
     }
 
-    /* ================= FEATURES ================= */
-
-    .features {
+    .secondary-btn {
         background: white;
-    }
-
-    .feature-grid {
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-        gap: 25px;
-    }
-
-    .feature-card {
-        padding: 30px;
-        border-radius: 16px;
-        border: 1px solid var(--border);
-        background: white;
-    }
-
-    .feature-card .icon {
-        font-size: 30px;
-        margin-bottom: 15px;
-    }
-
-    .feature-card h3 {
-        margin-bottom: 8px;
-    }
-
-    .feature-card p {
-        color: var(--gray);
-        font-size: 14px;
-    }
-
-    /* ================= PROFILE POPUP ================= */
-
-    .profile-menu {
-        position: fixed;
-        top: 78px;
-        right: 30px;
-        width: 280px;
-        background: white;
-        border-radius: 15px;
-        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
-        border: 1px solid var(--border);
-        padding: 20px;
-        display: none;
-        z-index: 2000;
-    }
-
-    .profile-menu.show {
-        display: block;
-    }
-
-    .profile-header {
-        display: flex;
-        align-items: center;
-        gap: 12px;
-        padding-bottom: 15px;
-        border-bottom: 1px solid var(--border);
-    }
-
-    .profile-avatar {
-        width: 48px;
-        height: 48px;
-        border-radius: 50%;
-        background: var(--light-blue);
-        display: grid;
-        place-items: center;
-        font-size: 22px;
-    }
-
-    .profile-header h3 {
-        font-size: 16px;
-    }
-
-    .profile-header p {
-        color: var(--gray);
-        font-size: 12px;
-    }
-
-    .profile-menu a {
-        display: block;
-        padding: 11px;
-        border-radius: 8px;
-        margin-top: 5px;
-        font-size: 14px;
-    }
-
-    .profile-menu a:hover {
-        background: var(--light-blue);
         color: var(--blue);
+        border: 1px solid #bdd4f5;
     }
 
-    /* ================= SETTINGS ================= */
-
-    .settings-box {
-        display: none;
-        position: fixed;
-        inset: 0;
-        background: rgba(0,0,0,0.4);
-        z-index: 3000;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
+    .secondary-btn:hover {
+        background: var(--light-blue);
     }
 
-    .settings-box.show {
-        display: flex;
-    }
+    /* HERO DASHBOARD */
 
-    .settings-card {
+    .hero-dashboard {
         background: white;
-        width: 450px;
-        max-width: 100%;
-        border-radius: 18px;
-        padding: 30px;
+        border-radius: 25px;
+        padding: 28px;
+        box-shadow: 0 25px 60px rgba(23, 105, 224, 0.16);
+        border: 1px solid var(--border);
     }
 
-    .settings-head {
+    .mini-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 25px;
     }
 
-    .close-btn {
-        background: #f1f5f9;
-        width: 35px;
-        height: 35px;
-        border-radius: 50%;
+    .mini-header h3 {
         font-size: 18px;
     }
 
-    .setting-item {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 16px 0;
-        border-bottom: 1px solid var(--border);
+    .online {
+        color: var(--green);
+        font-size: 12px;
+        font-weight: 700;
     }
 
-    .setting-item strong {
+    .mini-circular {
+        width: 180px;
+        height: 180px;
+        margin: 15px auto 30px;
+        border-radius: 50%;
+        background: conic-gradient(
+            var(--blue) 0deg 252deg,
+            #e6eef9 252deg 360deg
+        );
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+
+    .mini-circular::after {
+        content: "";
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        background: white;
+        position: absolute;
+    }
+
+    .circle-content {
+        z-index: 1;
+        text-align: center;
+    }
+
+    .circle-content strong {
         display: block;
+        font-size: 38px;
+        color: var(--blue);
     }
 
-    .setting-item small {
+    .circle-content small {
         color: var(--gray);
     }
 
-    .toggle {
-        width: 45px;
-        height: 24px;
-        border-radius: 20px;
-        background: #cbd5e1;
-        position: relative;
-        cursor: pointer;
+    .mini-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
-    .toggle.active {
+    .mini-stat {
+        background: var(--light);
+        border-radius: 12px;
+        padding: 13px;
+        text-align: center;
+    }
+
+    .mini-stat strong {
+        display: block;
+        color: var(--dark-blue);
+    }
+
+    .mini-stat small {
+        color: var(--gray);
+        font-size: 11px;
+    }
+
+    /* ================= SKILL EXPLORER ================= */
+
+    .skills-section {
+        background: white;
+    }
+
+    .search-box {
+        max-width: 650px;
+        margin: 0 auto 40px;
+        display: flex;
+        background: white;
+        border: 1px solid var(--border);
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: var(--shadow);
+    }
+
+    .search-box input {
+        flex: 1;
+        padding: 16px;
+        border: none;
+        outline: none;
+        font-size: 15px;
+    }
+
+    .search-box button {
         background: var(--blue);
+        color: white;
+        padding: 0 25px;
+        font-weight: 700;
     }
 
-    .toggle::after {
+    .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .skill-card {
+        background: white;
+        border: 1px solid var(--border);
+        padding: 25px;
+        border-radius: 16px;
+        transition: 0.3s;
+        box-shadow: 0 5px 18px rgba(0, 40, 100, 0.04);
+    }
+
+    .skill-card:hover {
+        transform: translateY(-7px);
+        box-shadow: var(--shadow);
+        border-color: #a9c9f5;
+    }
+
+    .skill-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+        display: grid;
+        place-items: center;
+        color: white;
+        font-size: 21px;
+        margin-bottom: 18px;
+    }
+
+    .blue-bg { background: var(--blue); }
+    .cyan-bg { background: var(--cyan); }
+    .purple-bg { background: var(--purple); }
+    .green-bg { background: var(--green); }
+
+    .skill-card h3 {
+        margin-bottom: 7px;
+    }
+
+    .skill-card p {
+        color: var(--gray);
+        font-size: 13px;
+        margin-bottom: 18px;
+    }
+
+    .skill-level {
+        font-size: 11px;
+        color: var(--blue);
+        font-weight: 800;
+    }
+
+    /* ================= CAREER PATHS ================= */
+
+    .career-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .career-card {
+        background: white;
+        border-radius: 18px;
+        padding: 28px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+
+    .career-top {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .career-icon {
+        width: 52px;
+        height: 52px;
+        display: grid;
+        place-items: center;
+        border-radius: 14px;
+        background: var(--light-blue);
+        color: var(--blue);
+        font-size: 22px;
+    }
+
+    .career-card p {
+        color: var(--gray);
+        font-size: 14px;
+    }
+
+    .salary {
+        color: var(--green);
+        font-weight: 800;
+        font-size: 13px;
+        margin: 15px 0;
+    }
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
+    }
+
+    .tag {
+        padding: 6px 9px;
+        background: #eef5ff;
+        color: var(--blue);
+        border-radius: 20px;
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    /* ================= ROADMAP ================= */
+
+    .roadmap-section {
+        background: #edf5ff;
+    }
+
+    .roadmap {
+        max-width: 900px;
+        margin: auto;
+        position: relative;
+    }
+
+    .roadmap::before {
         content: "";
-        width: 18px;
-        height: 18px;
+        position: absolute;
+        left: 25px;
+        top: 0;
+        bottom: 0;
+        width: 3px;
+        background: linear-gradient(var(--blue), var(--cyan), var(--purple));
+    }
+
+    .road-step {
+        position: relative;
+        padding-left: 75px;
+        margin-bottom: 35px;
+    }
+
+    .step-number {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 52px;
+        height: 52px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        color: white;
+        background: var(--blue);
+        font-weight: 800;
+        border: 5px solid #edf5ff;
+        box-shadow: 0 0 0 2px var(--blue);
+    }
+
+    .road-content {
+        background: white;
+        padding: 23px;
+        border-radius: 15px;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
+    }
+
+    .road-content h3 {
+        color: var(--dark-blue);
+    }
+
+    .road-content p {
+        color: var(--gray);
+        font-size: 14px;
+    }
+
+    .road-progress {
+        height: 7px;
+        background: #e5edf8;
+        border-radius: 10px;
+        margin-top: 14px;
+        overflow: hidden;
+    }
+
+    .road-progress span {
+        display: block;
+        height: 100%;
+        background: linear-gradient(90deg, var(--blue), var(--cyan));
+        border-radius: inherit;
+    }
+
+    /* ================= DASHBOARD ================= */
+
+    .dashboard-section {
+        background: white;
+    }
+
+    .dashboard-layout {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+        gap: 35px;
+        align-items: center;
+    }
+
+    .main-progress {
+        background: linear-gradient(145deg, #0b3d91, #1769e0);
+        color: white;
+        border-radius: 25px;
+        padding: 35px;
+        text-align: center;
+        box-shadow: 0 20px 45px rgba(23, 105, 224, 0.25);
+    }
+
+    .big-circle {
+        width: 235px;
+        height: 235px;
+        margin: 10px auto 25px;
+        border-radius: 50%;
+        background: conic-gradient(
+            #22d3ee 0deg 288deg,
+            rgba(255,255,255,0.16) 288deg 360deg
+        );
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+
+    .big-circle::after {
+        content: "";
+        width: 180px;
+        height: 180px;
+        position: absolute;
+        background: #0d4aa5;
+        border-radius: 50%;
+    }
+
+    .big-circle-content {
+        z-index: 1;
+    }
+
+    .big-circle-content strong {
+        display: block;
+        font-size: 52px;
+    }
+
+    .big-circle-content small {
+        opacity: 0.8;
+    }
+
+    .main-progress p {
+        opacity: 0.8;
+        font-size: 14px;
+    }
+
+    .progress-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .progress-card {
+        border: 1px solid var(--border);
+        background: #fbfdff;
+        padding: 25px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .progress-circle {
+        min-width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        position: relative;
+    }
+
+    .progress-circle::after {
+        content: "";
+        position: absolute;
+        width: 63px;
+        height: 63px;
         background: white;
         border-radius: 50%;
-        position: absolute;
-        top: 3px;
-        left: 3px;
+    }
+
+    .progress-number {
+        position: relative;
+        z-index: 2;
+        font-weight: 800;
+        font-size: 17px;
+    }
+
+    .skills-progress {
+        background: conic-gradient(var(--blue) 0 270deg, #e7eff9 270deg);
+    }
+
+    .courses-progress {
+        background: conic-gradient(var(--purple) 0 234deg, #e7eff9 234deg);
+    }
+
+    .projects-progress {
+        background: conic-gradient(var(--cyan) 0 198deg, #e7eff9 198deg);
+    }
+
+    .career-progress {
+        background: conic-gradient(var(--green) 0 306deg, #e7eff9 306deg);
+    }
+
+    .progress-info h3 {
+        font-size: 15px;
+    }
+
+    .progress-info p {
+        color: var(--gray);
+        font-size: 12px;
+    }
+
+    /* ================= PROJECTS ================= */
+
+    .projects-section {
+        background: #f2f7ff;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+    }
+
+    .project-card {
+        background: white;
+        border-radius: 18px;
+        overflow: hidden;
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow);
         transition: 0.3s;
     }
 
-    .toggle.active::after {
-        left: 24px;
+    .project-card:hover {
+        transform: translateY(-5px);
+    }
+
+    .project-banner {
+        height: 130px;
+        display: grid;
+        place-items: center;
+        color: white;
+        font-size: 45px;
+    }
+
+    .project-one {
+        background: linear-gradient(135deg, #1769e0, #06b6d4);
+    }
+
+    .project-two {
+        background: linear-gradient(135deg, #7c3aed, #a855f7);
+    }
+
+    .project-three {
+        background: linear-gradient(135deg, #059669, #14b8a6);
+    }
+
+    .project-body {
+        padding: 23px;
+    }
+
+    .project-body p {
+        color: var(--gray);
+        font-size: 13px;
+        margin: 8px 0 15px;
+    }
+
+    .project-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .status {
+        color: var(--green);
+        font-size: 11px;
+        font-weight: 800;
+    }
+
+    .project-link {
+        color: var(--blue);
+        font-weight: 800;
+        font-size: 13px;
     }
 
     /* ================= FOOTER ================= */
@@ -749,58 +766,91 @@
     footer {
         background: #092e6f;
         color: white;
-        padding: 50px 7% 25px;
+        padding: 55px 7% 25px;
     }
 
-    .footer-grid {
+    .footer-content {
         max-width: 1250px;
         margin: auto;
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 1.5fr 1fr 1fr 1fr;
         gap: 40px;
     }
 
     footer h3 {
-        margin-bottom: 12px;
+        margin-bottom: 15px;
     }
 
-    footer p {
-        color: #cbdcf7;
-        font-size: 14px;
+    footer p,
+    footer a {
+        color: #c9dcf8;
+        font-size: 13px;
     }
 
     footer a {
         display: block;
-        color: #cbdcf7;
-        margin: 7px 0;
-        font-size: 14px;
+        margin-bottom: 8px;
     }
 
     footer a:hover {
         color: white;
     }
 
-    .copyright {
+    .footer-bottom {
         max-width: 1250px;
-        margin: 35px auto 0;
+        margin: 40px auto 0;
         padding-top: 20px;
         border-top: 1px solid rgba(255,255,255,0.15);
-        color: #cbdcf7;
-        font-size: 13px;
         text-align: center;
+        color: #abc5e8;
+        font-size: 12px;
     }
 
     /* ================= RESPONSIVE ================= */
 
-    @media(max-width:1000px) {
+    @media (max-width: 1000px) {
+        .skill-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .career-grid,
+        .project-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .hero-content {
+            grid-template-columns: 1fr;
+        }
+
+        .dashboard-layout {
+            grid-template-columns: 1fr;
+        }
+
+        .footer-content {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 760px) {
+        section {
+            padding: 65px 5%;
+        }
+
+        .navbar {
+            height: 65px;
+        }
+
+        .menu-btn {
+            display: block;
+        }
 
         .nav-links {
-            display: none;
             position: absolute;
-            top: 72px;
+            top: 65px;
             left: 0;
-            width: 100%;
-            background: var(--dark-blue);
+            right: 0;
+            background: #0b3d91;
+            display: none;
             flex-direction: column;
             padding: 15px;
         }
@@ -809,52 +859,29 @@
             display: flex;
         }
 
-        .nav-links li {
-            width: 100%;
-        }
-
         .nav-links a {
-            display: block;
             width: 100%;
+            text-align: center;
         }
 
-        .menu-btn {
-            display: block;
+        .section-title h2 {
+            font-size: 30px;
         }
 
-        .hero-content {
-            grid-template-columns: 1fr;
+        .hero {
+            min-height: auto;
+            padding-top: 60px;
+            padding-bottom: 70px;
         }
 
-        .quick-grid {
-            grid-template-columns: repeat(2,1fr);
+        .hero-text h1 {
+            font-size: 44px;
         }
 
-        .course-grid {
-            grid-template-columns: repeat(2,1fr);
-        }
-
-        .feature-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .footer-grid {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
-
-    @media(max-width:600px) {
-
-        .hero h1 {
-            font-size: 40px;
-        }
-
-        section {
-            padding: 60px 5%;
-        }
-
-        .quick-grid,
-        .course-grid {
+        .skill-grid,
+        .career-grid,
+        .project-grid,
+        .progress-grid {
             grid-template-columns: 1fr;
         }
 
@@ -862,988 +889,323 @@
             grid-template-columns: 1fr;
         }
 
-        .course-search {
-            flex-direction: column;
-        }
-
-        .course-search button {
-            padding: 13px;
-        }
-
-        .footer-grid {
+        .footer-content {
             grid-template-columns: 1fr;
         }
 
-        .profile-menu {
-            right: 15px;
-            left: 15px;
-            width: auto;
+        .roadmap::before {
+            left: 21px;
+        }
+
+        .road-step {
+            padding-left: 60px;
+        }
+
+        .step-number {
+            width: 45px;
+            height: 45px;
+        }
+
+        .big-circle {
+            width: 205px;
+            height: 205px;
+        }
+
+        .big-circle::after {
+            width: 155px;
+            height: 155px;
         }
     }
 </style>
-```
 
 </head>
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= NAVIGATION ================= -->
 
 <nav>
     <div class="navbar">
 
-```
-    <a href="#home" class="logo">
-        <div class="logo-icon">S</div>
-        SkillHub
-    </a>
+        <a href="#home" class="logo">
+            <div class="logo-icon">S</div>
+            SkillHub
+        </a>
 
-    <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
 
-    <ul class="nav-links" id="navLinks">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#skills">Skill Explorer</a></li>
+            <li><a href="#careers">Career Paths</a></li>
+            <li><a href="#roadmap">Learning Roadmap</a></li>
+            <li><a href="#dashboard">Dashboard</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#dashboard" class="nav-btn">My Progress</a></li>
+        </ul>
 
-        <li>
-            <a href="#home" class="active">
-                🏠 Home
-            </a>
-        </li>
-
-        <li>
-            <a href="#courses">
-                📚 Courses
-            </a>
-        </li>
-
-        <li>
-            <a href="skills.html">
-                🧭 Skills
-            </a>
-        </li>
-
-        <li>
-            <a href="careerpaths.html">
-                💼 Careers
-            </a>
-        </li>
-
-        <li>
-            <a href="roadmap.html">
-                🗺️ Roadmap
-            </a>
-        </li>
-
-        <li>
-            <a href="dashboard.html">
-                📊 Dashboard
-            </a>
-        </li>
-
-        <li>
-            <a href="projects.html">
-                🚀 Projects
-            </a>
-        </li>
-
-        <li>
-            <a href="#" onclick="toggleProfile(event)" class="profile-btn">
-                <span class="profile-small">👤</span>
-                Profile
-            </a>
-        </li>
-
-    </ul>
-</div>
-```
-
+    </div>
 </nav>
 
-<!-- ================= PROFILE MENU ================= -->
-
-<div class="profile-menu" id="profileMenu">
-
-```
-<div class="profile-header">
-
-    <div class="profile-avatar">
-        👤
-    </div>
-
-    <div>
-        <h3>Student Profile</h3>
-        <p>Welcome to SkillHub</p>
-    </div>
-
-</div>
-
-<a href="profile.html">👤 My Profile</a>
-
-<a href="dashboard.html">📊 My Dashboard</a>
-
-<a href="#courses">📚 My Courses</a>
-
-<a href="#progress">📈 My Progress</a>
-
-<a href="#" onclick="openSettings()">⚙️ Settings</a>
-
-<a href="#" onclick="logout()">🚪 Logout</a>
-```
-
-</div>
 
 <!-- ================= HOME ================= -->
 
 <section class="hero" id="home">
 
-```
-<div class="hero-content">
+    <div class="hero-content">
 
-    <div>
+        <div class="hero-text">
 
-        <span class="hero-label">
-            ✦ Welcome to SkillHub
-        </span>
-
-        <h1>
-            Learn Skills.<br>
-            <span>Build Your Future.</span>
-        </h1>
-
-        <p>
-            Discover courses, develop valuable skills, explore
-            career opportunities, follow personalized learning
-            roadmaps, and track your progress — all in one place.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#courses" class="primary-btn">
-                Explore Courses →
-            </a>
-
-            <a href="skill-explorer.html" class="secondary-btn">
-                Explore Skills
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <!-- STUDENT DASHBOARD -->
-
-    <div class="hero-dashboard">
-
-        <div class="mini-header">
-
-            <h3>Student Progress</h3>
-
-            <span class="online">
-                ● On Track
+            <span class="hero-label">
+                ✦ Your Future Starts Here
             </span>
 
-        </div>
-
-        <div class="progress-circle">
-
-            <div class="progress-inner">
-
-                <strong>70%</strong>
-
-                <small>Overall Progress</small>
-
-            </div>
-
-        </div>
-
-        <div class="mini-stats">
-
-            <div class="mini-stat">
-                <strong>12</strong>
-                <small>Skills</small>
-            </div>
-
-            <div class="mini-stat">
-                <strong>8</strong>
-                <small>Courses</small>
-            </div>
-
-            <div class="mini-stat">
-                <strong>5</strong>
-                <small>Projects</small>
-            </div>
-
-        </div>
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- ================= SEARCH COURSES ================= -->
-
-<section class="search-section">
-
-```
-<div class="container">
-
-    <div class="section-title">
-
-        <span>Course Search</span>
-
-        <h2>What Do You Want to Learn?</h2>
-
-        <p>
-            Search for courses and start building your skills.
-        </p>
-
-    </div>
-
-    <div class="course-search">
-
-        <input
-            type="text"
-            id="courseSearch"
-            placeholder="Search courses like Python, Web Development, AI..."
-            onkeyup="searchCourses()"
-        >
-
-        <button onclick="searchCourses()">
-            🔍 Search
-        </button>
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- ================= QUICK ACTIONS ================= -->
-
-<section>
-
-```
-<div class="container">
-
-    <div class="section-title">
-
-        <span>Quick Access</span>
-
-        <h2>Everything You Need</h2>
-
-        <p>
-            Access your learning tools quickly from one place.
-        </p>
-
-    </div>
-
-    <div class="quick-grid">
-
-        <a href="#courses" class="quick-card">
-
-            <div class="quick-icon blue-bg">
-                📚
-            </div>
-
-            <h3>Courses</h3>
+            <h1>
+                Build Skills.<br>
+                <span>Build Your Future.</span>
+            </h1>
 
             <p>
-                Learn through structured courses.
+                SkillHub helps students discover the right skills,
+                explore career opportunities, create personalized
+                learning roadmaps, and track their progress.
             </p>
 
-        </a>
-
-
-        <a href="skill-explorer.html" class="quick-card">
-
-            <div class="quick-icon purple-bg">
-                🧭
-            </div>
-
-            <h3>Skill Explorer</h3>
-
-            <p>
-                Discover important skills.
-            </p>
-
-        </a>
-
-
-        <a href="career-paths.html" class="quick-card">
-
-            <div class="quick-icon cyan-bg">
-                💼
-            </div>
-
-            <h3>Career Paths</h3>
-
-            <p>
-                Explore your future career.
-            </p>
-
-        </a>
-
-
-        <a href="dashboard.html" class="quick-card">
-
-            <div class="quick-icon green-bg">
-                📊
-            </div>
-
-            <h3>My Progress</h3>
-
-            <p>
-                Track your learning progress.
-            </p>
-
-        </a>
-
-    </div>
-
-</div>
-```
-
-</section>
-
-<!-- ================= COURSES ================= -->
-
-<section class="courses-section" id="courses">
-
-```
-<div class="container">
-
-    <div class="section-title">
-
-        <span>Popular Courses</span>
-
-        <h2>Start Learning Today</h2>
-
-        <p>
-            Choose a course and start improving your skills.
-        </p>
-
-    </div>
-
-
-    <div class="course-grid" id="courseGrid">
-
-
-        <!-- COURSE 1 -->
-
-        <div class="course-card">
-
-            <div class="course-top blue">
-
-                <div class="course-icon">
-                    💻
-                </div>
-
-                <div>
-                    <strong>Web Development</strong>
-                    <small>Technology</small>
-                </div>
-
-            </div>
-
-            <div class="course-body">
-
-                <h3>Complete Web Development</h3>
-
-                <p>
-                    Learn HTML, CSS and JavaScript to build modern websites.
-                </p>
-
-                <div class="course-info">
-                    <span>📖 24 Lessons</span>
-                    <span>⭐ Beginner</span>
-                </div>
-
-                <a href="#" class="course-btn">
-                    Start Course →
+            <div class="hero-buttons">
+                <a href="#skills" class="primary-btn">
+                    Explore Skills →
                 </a>
 
-            </div>
-
-        </div>
-
-
-        <!-- COURSE 2 -->
-
-        <div class="course-card">
-
-            <div class="course-top purple">
-
-                <div class="course-icon">
-                    🐍
-                </div>
-
-                <div>
-                    <strong>Python</strong>
-                    <small>Programming</small>
-                </div>
-
-            </div>
-
-            <div class="course-body">
-
-                <h3>Python Programming</h3>
-
-                <p>
-                    Learn Python programming from basics to practical projects.
-                </p>
-
-                <div class="course-info">
-                    <span>📖 30 Lessons</span>
-                    <span>⭐ Beginner</span>
-                </div>
-
-                <a href="#" class="course-btn">
-                    Start Course →
+                <a href="#careers" class="secondary-btn">
+                    Explore Careers
                 </a>
-
             </div>
 
         </div>
 
 
-        <!-- COURSE 3 -->
+        <!-- Mini Dashboard -->
 
-        <div class="course-card">
+        <div class="hero-dashboard">
 
-            <div class="course-top green">
+            <div class="mini-header">
+                <h3>Student Progress</h3>
+                <span class="online">● On Track</span>
+            </div>
 
-                <div class="course-icon">
-                    📊
-                </div>
+            <div class="mini-circular">
 
-                <div>
-                    <strong>Data Analytics</strong>
-                    <small>Data</small>
+                <div class="circle-content">
+                    <strong>70%</strong>
+                    <small>Overall Progress</small>
                 </div>
 
             </div>
 
-            <div class="course-body">
+            <div class="mini-stats">
 
+                <div class="mini-stat">
+                    <strong>12</strong>
+                    <small>Skills</small>
+                </div>
+
+                <div class="mini-stat">
+                    <strong>8</strong>
+                    <small>Courses</small>
+                </div>
+
+                <div class="mini-stat">
+                    <strong>5</strong>
+                    <small>Projects</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILL EXPLORER ================= -->
+
+<section class="skills-section" id="skills">
+
+    <div class="container">
+
+        <div class="section-title">
+            <span>Skill Explorer</span>
+            <h2>Discover Skills That Matter</h2>
+            <p>
+                Find skills that match your academic interests,
+                career goals, and future opportunities.
+            </p>
+        </div>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="skillSearch"
+                placeholder="Search for a skill..."
+                onkeyup="searchSkills()"
+            >
+            <button>Search</button>
+        </div>
+
+        <div class="skill-grid" id="skillGrid">
+
+            <div class="skill-card">
+                <div class="skill-icon blue-bg">💻</div>
+                <h3>Web Development</h3>
+                <p>Build modern websites and interactive web applications.</p>
+                <span class="skill-level">Beginner → Advanced</span>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon cyan-bg">📊</div>
                 <h3>Data Analytics</h3>
-
-                <p>
-                    Learn how to analyze data and create useful insights.
-                </p>
-
-                <div class="course-info">
-                    <span>📖 20 Lessons</span>
-                    <span>⭐ Intermediate</span>
-                </div>
-
-                <a href="#" class="course-btn">
-                    Start Course →
-                </a>
-
+                <p>Learn how to analyze data and create meaningful insights.</p>
+                <span class="skill-level">Beginner → Advanced</span>
             </div>
 
-        </div>
-
-
-        <!-- COURSE 4 -->
-
-        <div class="course-card">
-
-            <div class="course-top blue">
-
-                <div class="course-icon">
-                    🤖
-                </div>
-
-                <div>
-                    <strong>Artificial Intelligence</strong>
-                    <small>AI</small>
-                </div>
-
+            <div class="skill-card">
+                <div class="skill-icon purple-bg">🤖</div>
+                <h3>Artificial Intelligence</h3>
+                <p>Explore machine learning, AI concepts, and intelligent systems.</p>
+                <span class="skill-level">Intermediate</span>
             </div>
 
-            <div class="course-body">
-
-                <h3>Introduction to AI</h3>
-
-                <p>
-                    Understand artificial intelligence and machine learning concepts.
-                </p>
-
-                <div class="course-info">
-                    <span>📖 18 Lessons</span>
-                    <span>⭐ Intermediate</span>
-                </div>
-
-                <a href="#" class="course-btn">
-                    Start Course →
-                </a>
-
+            <div class="skill-card">
+                <div class="skill-icon green-bg">🎨</div>
+                <h3>UI/UX Design</h3>
+                <p>Design beautiful and user-friendly digital experiences.</p>
+                <span class="skill-level">Beginner → Advanced</span>
             </div>
 
-        </div>
-
-
-        <!-- COURSE 5 -->
-
-        <div class="course-card">
-
-            <div class="course-top purple">
-
-                <div class="course-icon">
-                    🎨
-                </div>
-
-                <div>
-                    <strong>UI/UX Design</strong>
-                    <small>Design</small>
-                </div>
-
+            <div class="skill-card">
+                <div class="skill-icon blue-bg">☁️</div>
+                <h3>Cloud Computing</h3>
+                <p>Understand cloud platforms, deployment, and infrastructure.</p>
+                <span class="skill-level">Intermediate</span>
             </div>
 
-            <div class="course-body">
-
-                <h3>UI/UX Design Basics</h3>
-
-                <p>
-                    Learn how to design beautiful and user-friendly interfaces.
-                </p>
-
-                <div class="course-info">
-                    <span>📖 16 Lessons</span>
-                    <span>⭐ Beginner</span>
-                </div>
-
-                <a href="#" class="course-btn">
-                    Start Course →
-                </a>
-
+            <div class="skill-card">
+                <div class="skill-icon cyan-bg">🔐</div>
+                <h3>Cyber Security</h3>
+                <p>Develop knowledge of security, networks, and cyber threats.</p>
+                <span class="skill-level">Intermediate</span>
             </div>
 
-        </div>
-
-
-        <!-- COURSE 6 -->
-
-        <div class="course-card">
-
-            <div class="course-top green">
-
-                <div class="course-icon">
-                    🔐
-                </div>
-
-                <div>
-                    <strong>Cyber Security</strong>
-                    <small>Security</small>
-                </div>
-
+            <div class="skill-card">
+                <div class="skill-icon purple-bg">🧠</div>
+                <h3>Communication</h3>
+                <p>Improve presentations, teamwork, writing, and communication.</p>
+                <span class="skill-level">All Levels</span>
             </div>
 
-            <div class="course-body">
-
-                <h3>Cyber Security Fundamentals</h3>
-
-                <p>
-                    Learn basic concepts of networks, security and cyber threats.
-                </p>
-
-                <div class="course-info">
-                    <span>📖 22 Lessons</span>
-                    <span>⭐ Intermediate</span>
-                </div>
-
-                <a href="#" class="course-btn">
-                    Start Course →
-                </a>
-
+            <div class="skill-card">
+                <div class="skill-icon green-bg">🚀</div>
+                <h3>Entrepreneurship</h3>
+                <p>Learn innovation, business thinking, and startup fundamentals.</p>
+                <span class="skill-level">Beginner</span>
             </div>
 
         </div>
 
     </div>
-
-
-    <div class="no-results" id="noResults">
-        ❌ No courses found. Try another search.
-    </div>
-
-</div>
-```
 
 </section>
 
-<!-- ================= FEATURES ================= -->
 
-<section class="features" id="progress">
+<!-- ================= CAREER PATHS ================= -->
 
-```
-<div class="container">
+<section id="careers">
 
-    <div class="section-title">
+    <div class="container">
 
-        <span>Why SkillHub?</span>
-
-        <h2>Learn Smarter</h2>
-
-        <p>
-            SkillHub gives students everything they need to build
-            skills and plan their careers.
-        </p>
-
-    </div>
-
-
-    <div class="feature-grid">
-
-        <div class="feature-card">
-
-            <div class="icon">🎯</div>
-
-            <h3>Personalized Learning</h3>
-
+        <div class="section-title">
+            <span>Career Paths</span>
+            <h2>Find Your Future Career</h2>
             <p>
-                Follow learning paths based on your interests,
-                skills and career goals.
+                Explore career paths and understand the skills
+                you need to reach your goals.
             </p>
-
         </div>
 
+        <div class="career-grid">
 
-        <div class="feature-card">
+            <div class="career-card">
 
-            <div class="icon">📈</div>
+                <div class="career-top">
+                    <div class="career-icon">💻</div>
+                    <div>
+                        <h3>Software Engineer</h3>
+                        <small>Technology</small>
+                    </div>
+                </div>
 
-            <h3>Track Your Progress</h3>
+                <p>
+                    Build applications, websites, and software systems
+                    for organizations around the world.
+                </p>
 
-            <p>
-                Monitor your completed courses, skills,
-                projects and learning progress.
-            </p>
+                <div class="salary">High Career Demand</div>
 
-        </div>
+                <div class="tags">
+                    <span class="tag">JavaScript</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Git</span>
+                </div>
 
+            </div>
 
-        <div class="feature-card">
 
-            <div class="icon">🚀</div>
+            <div class="career-card">
 
-            <h3>Build Real Projects</h3>
+                <div class="career-top">
+                    <div class="career-icon">📈</div>
+                    <div>
+                        <h3>Data Scientist</h3>
+                        <small>Data & AI</small>
+                    </div>
+                </div>
 
-            <p>
-                Practice your skills by creating projects
-                that strengthen your portfolio.
-            </p>
+                <p>
+                    Transform complex data into insights that help
+                    businesses make better decisions.
+                </p>
 
-        </div>
+                <div class="salary">High Career Demand</div>
 
-    </div>
+                <div class="tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Statistics</span>
+                </div>
 
-</div>
-```
+            </div>
 
-</section>
 
-<!-- ================= SETTINGS ================= -->
+            <div class="career-card">
 
-<div class="settings-box" id="settingsBox">
+                <div class="career-top">
+                    <div class="career-icon">🎨</div>
+                    <div>
+                        <h3>UI/UX Designer</h3>
+                        <small>Design</small>
+                    </div>
+                </div>
 
-```
-<div class="settings-card">
+                <p>
+                    Create intuitive digital products and experiences
+                    that solve real user problems.
+                </p>
 
-    <div class="settings-head">
+                <div class="salary">Growing Career</div>
 
-        <h2>⚙️ Settings</h2>
-
-        <button class="close-btn" onclick="closeSettings()">
-            ×
-        </button>
-
-    </div>
-
-
-    <div class="setting-item">
-
-        <div>
-            <strong>Notifications</strong>
-            <small>Receive learning reminders</small>
-        </div>
-
-        <div class="toggle active"
-             onclick="toggleSetting(this)">
-        </div>
-
-    </div>
-
-
-    <div class="setting-item">
-
-        <div>
-            <strong>Email Updates</strong>
-            <small>Receive course updates</small>
-        </div>
-
-        <div class="toggle"
-             onclick="toggleSetting(this)">
-        </div>
-
-    </div>
-
-
-    <div class="setting-item">
-
-        <div>
-            <strong>Learning Reminders</strong>
-            <small>Daily learning reminders</small>
-        </div>
-
-        <div class="toggle active"
-             onclick="toggleSetting(this)">
-        </div>
-
-    </div>
-
-
-    <div class="setting-item">
-
-        <div>
-            <strong>Language</strong>
-            <small>English</small>
-        </div>
-
-        <span>🇬🇧</span>
-
-    </div>
-
-</div>
-```
-
-</div>
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-```
-<div class="footer-grid">
-
-    <div>
-
-        <h3>SkillHub</h3>
-
-        <p>
-            Learn skills, explore careers, build projects
-            and create your future.
-        </p>
-
-    </div>
-
-
-    <div>
-
-        <h3>Learn</h3>
-
-        <a href="#courses">Courses</a>
-        <a href="skill-explorer.html">Skills</a>
-        <a href="roadmap.html">Roadmap</a>
-
-    </div>
-
-
-    <div>
-
-        <h3>Career</h3>
-
-        <a href="career-paths.html">Career Paths</a>
-        <a href="projects.html">Projects</a>
-        <a href="dashboard.html">Dashboard</a>
-
-    </div>
-
-
-    <div>
-
-        <h3>Account</h3>
-
-        <a href="profile.html">Profile</a>
-        <a href="#" onclick="openSettings()">Settings</a>
-        <a href="#">Help</a>
-
-    </div>
-
-</div>
-
-
-<div class="copyright">
-
-    © 2026 SkillHub. Learn. Grow. Succeed.
-
-</div>
-```
-
-</footer>
-
-<!-- ================= JAVASCRIPT ================= -->
-
-<script>
-
-    /* MOBILE MENU */
-
-    function toggleMenu() {
-
-        document
-            .getElementById("navLinks")
-            .classList.toggle("show");
-
-    }
-
-
-    /* PROFILE MENU */
-
-    function toggleProfile(event) {
-
-        event.preventDefault();
-
-        document
-            .getElementById("profileMenu")
-            .classList.toggle("show");
-
-    }
-
-
-    /* CLOSE PROFILE WHEN CLICKING OUTSIDE */
-
-    document.addEventListener("click", function(event) {
-
-        const profileMenu =
-            document.getElementById("profileMenu");
-
-        const profileButton =
-            document.querySelector(".profile-btn");
-
-        if (
-            !profileMenu.contains(event.target) &&
-            !profileButton.contains(event.target)
-        ) {
-
-            profileMenu.classList.remove("show");
-
-        }
-
-    });
-
-
-    /* COURSE SEARCH */
-
-    function searchCourses() {
-
-        const input =
-            document
-            .getElementById("courseSearch")
-            .value
-            .toLowerCase()
-            .trim();
-
-        const courses =
-            document.querySelectorAll(".course-card");
-
-        let found = false;
-
-        courses.forEach(function(course) {
-
-            const text =
-                course.innerText.toLowerCase();
-
-            if (text.includes(input)) {
-
-                course.style.display = "block";
-
-                found = true;
-
-            } else {
-
-                course.style.display = "none";
-
-            }
-
-        });
-
-
-        const noResults =
-            document.getElementById("noResults");
-
-        if (found || input === "") {
-
-            noResults.style.display = "none";
-
-        } else {
-
-            noResults.style.display = "block";
-
-        }
-
-    }
-
-
-    /* SETTINGS */
-
-    function openSettings() {
-
-        document
-            .getElementById("settingsBox")
-            .classList.add("show");
-
-        document
-            .getElementById("profileMenu")
-            .classList.remove("show");
-
-    }
-
-
-    function closeSettings() {
-
-        document
-            .getElementById("settingsBox")
-            .classList.remove("show");
-
-    }
-
-
-    /* SETTINGS TOGGLE */
-
-    function toggleSetting(element) {
-
-        element.classList.toggle("active");
-
-    }
-
-
-    /* LOGOUT */
-
-    function logout() {
-
-        alert("You have been logged out.");
-
-    }
-
-
-    /* CLOSE SETTINGS WHEN CLICKING BACKGROUND */
-
-    document
-        .getElementById("settingsBox")
-        .addEventListener("click", function(event) {
-
-            if (event.target === this) {
-
-                closeSettings();
-
-            }
-
-        });
-
-</script>
-
-</body>
-</html>
+                <div class="tags">
+                    <span class="tag">Figma</span>
+                    <span class="tag">Research</span>
+                    <span class="tag">Prototyping</span>
+                </div>
