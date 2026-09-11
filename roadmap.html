@@ -4,9 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>SkillHub - Learning Roadmap</title>
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -31,24 +33,35 @@
     --shadow: 0 10px 30px rgba(23, 105, 224, 0.10);
 }
 
+/* BODY */
+
 body {
     background: var(--light);
     color: var(--dark);
 }
 
 /* NAVBAR */
+
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background: linear-gradient(135deg, var(--dark-blue), var(--blue));
+
+    background: linear-gradient(
+        135deg,
+        var(--dark-blue),
+        var(--blue)
+    );
+
     padding: 15px 6%;
+
     box-shadow: 0 5px 20px rgba(0,0,0,0.12);
 }
 
 .nav-container {
     max-width: 1200px;
     margin: auto;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,38 +70,55 @@ body {
 .logo {
     display: flex;
     align-items: center;
+
     gap: 10px;
+
     color: white;
+
     font-size: 24px;
     font-weight: bold;
+
     text-decoration: none;
 }
 
 .logo-box {
     width: 42px;
     height: 42px;
+
     background: white;
+
     color: var(--blue);
+
     border-radius: 12px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-size: 25px;
     font-weight: bold;
 }
 
 .nav-links {
     list-style: none;
+
     display: flex;
+
     gap: 25px;
+
     align-items: center;
 }
 
 .nav-links a {
     color: white;
+
     text-decoration: none;
+
     font-size: 14px;
+
     font-weight: 600;
+
+    transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -96,20 +126,3 @@ body {
 }
 
 .profile-btn {
-    background: white;
-    color: var(--blue) !important;
-    padding: 10px 16px;
-    border-radius: 20px;
-}
-
-.menu-btn {
-    display: none;
-    color: white;
-    font-size: 28px;
-    cursor: pointer;
-}
-
-/* HERO */
-.hero {
-    background: linear-gradient(135deg, #eaf3ff, #ffffff);
-    pa
